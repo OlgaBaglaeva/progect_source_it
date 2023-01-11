@@ -1,0 +1,470 @@
+header
+    position: relative
+    height: 161px
+nav
+    width: 100%
+    z-index: 5
+    position: fixed 
+    background: #012D5A
+    height: 33px
+    display: flex
+    justify-content: space-between
+.menu
+    // width: 596px
+    list-style-type: none
+    display: flex
+    margin: auto
+    &_item
+        padding-right: 21px
+    &_link
+        font-weight: 400
+        font-size: 16px
+        color: #fff 
+        text-decoration: none 
+.call
+    list-style-type: none
+    display: flex
+    margin: auto
+    &_icon
+        margin: auto
+        color: #fff
+        text-decoration: none
+        transform: rotate(90deg)
+    &_phone 
+        display: block
+        font-weight: 400
+        font-size: 16px
+        color: #fff 
+        text-decoration: none
+        margin-left: 21px
+    &_request
+        font-weight: 400
+        font-size: 16px
+        margin-left: 21px
+        color: #F3F3F3
+        text-decoration: none
+        &:hover
+            cursor: pointer
+.subheader
+    // position: absolute
+    border-top: 1px solid #F3F3F3
+    padding-top: 33px
+    height: 97px
+    width: 100%
+    background: #FFFFFF 
+    &_menu
+        display: flex
+        justify-content: space-between
+        margin: auto
+    &_logo
+        max-width: 100%
+        margin-top: 8px
+    &_search
+        margin-top: 12px
+        width: 593px
+        height: 40px
+        border-radius: 34px
+        background: #F3F3F3
+        border: none
+        font-style: normal
+        font-weight: 400
+        font-size: 15px
+        line-height: 18px
+        color: #A6B0B9
+    &_compare
+        display: flex
+        width: 90px
+        margin-top: 25px
+    &_icon
+        margin-right: 11px
+        color:#A6B0B9
+    a
+        font-weight: 400
+        font-size: 14px
+        color: #181818
+        text-decoration: none
+        @include a_hover
+    &_favorites
+        display: flex
+        width: 99px
+        margin-top: 25px
+    &_basket
+        display: flex
+        width: 82px
+        margin-top: 25px
+    &_btn
+        display: block
+        width: 248px
+        // height: 40px
+        border: 1px solid $blue
+        border-radius: 34px
+        margin-top: 12px
+        font-weight: 400
+        font-size: 14px
+        line-height: 16px
+        color: $blue
+        background: #fff
+        @include btn_hover
+.types
+    height: 64px
+    border: 1px solid #F3F3F3
+    // width: 1406px
+    background: #FFFFFF 
+    display: flex
+    // align-items: center
+    // justify-content: center
+    &_list
+        align-content: center
+        list-style-type: none
+        // display: block
+        display: flex
+        padding-right: 40px
+        // align-items: center
+        // justify-content: center
+    &_item
+        display: flex
+        margin: auto 
+    &_btn
+        width: 130px
+        height: 46px
+        background: $blue
+        border-radius: 25px 
+        font-weight: 400
+        font-size: 16px
+        color: #FFFFFF
+        border: none
+        &:hover
+            border: 1px solid $blue
+            color: $blue
+            background: #F3F3F3     
+    a
+        text-decoration: none
+        font-weight: 400
+        font-size: 14px
+        color: #181818
+        @include a_hover
+.links
+    width: 100%
+    height: 111px
+    &_list
+        display: flex
+        list-style-type: none
+        margin-top: 61px
+    &_item
+        display: flex
+        align-items: center
+    &_link 
+        font-weight: 400
+        font-size: 12px
+        color: #000000   
+        text-decoration: none
+.main_title
+    height: 28px
+    width: 100% 
+    margin-bottom: 41px
+    &_caption
+        font-weight: 700
+        font-size: 28px 
+        color: #000000
+.kinds
+    width: 100%
+    min-height: 180px
+    padding: 18px 
+    background: #FFFFFF
+    border-radius: 9px
+    display: block
+    &_subtitle
+        // width: 188px
+        // right: 18px
+        height: 16px
+        // left: 275px
+        // top: 341px
+        // display: flex
+        margin-bottom: 25px
+        font-weight: 700
+        font-size: 16px
+        color: #181818
+        
+    &_btn
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        // padding: 5px 0 
+        // gap: 10px
+        // width: 357px
+        height: 30px
+        border: 1px solid #E1F0FE
+        border-radius: 9px
+        font-weight: 400
+        font-size: 14px
+        text-align: center
+        color: #181818
+        margin-top: 10px
+        @include btn_hover
+.subkinds
+    width: 100%
+    min-height: 56px
+    background: #FFFFFF
+    border-radius: 9px
+    margin-top: 18px
+    display: flex
+    align-items: center
+
+    &_btn
+        display: flex
+        justify-content: space-around
+        align-items: center
+        // padding: 5px 0 
+        // width: 357px
+        height: 30px
+        border: 1px solid #25A1D3
+        border-radius: 9px
+        font-weight: 400
+        font-size: 14px
+        // text-align: center
+        color: #25A1D3
+        background: #fff
+        text-align: center
+        @include btn_hover
+
+.main
+    display: flex
+    padding: 18px
+    gap: 18px
+
+    &_search
+        width: 267px
+        height: 500px
+        background-color: #e9d2d2
+
+    &_catalog
+        margin-bottom: 143px
+
+        &_item
+            width: 266px
+            min-height: 391px
+            background-color: #fff
+            border-radius: 10px
+            position: relative
+            padding: 18px
+            &_img
+                width: 151px
+                height: 151px
+                margin: 10px auto 0
+            &_sale
+                display: flex
+                align-items: center
+                justify-content: center
+                position: absolute
+                top: 18px
+                left: 18px
+                background-color: $blue
+                border-radius: 5px
+                font-weight: 400
+                font-size: 11px
+                color: #FFFFFF
+                width: 72px
+                height: 21px
+
+            &_heart, &_filter
+                position: absolute
+                width: 36px
+                height: 36px
+                right: 18px
+                top: 18px
+                border: 1px solid #A6B0B9
+                border-radius: 9px
+
+            &_filter
+                top: 63px
+
+            &_descr
+                font-weight: 400
+                font-size: 14px
+                line-height: 130%
+                margin-top: 10px
+
+            &_price
+                width: 135px
+                height: 22px
+                font-weight: 700
+                font-size: 22px
+                margin-top: 18px
+
+            &_btn
+                width: 167px
+                height: 50px
+                margin-top: 20px
+                border: 1px solid $blue
+                border-radius: 62px
+                background-color: #fff
+                color: $blue
+                font-weight: 400
+                font-size: 16px
+                @include btn_hover
+
+            &_basket
+                position: absolute
+                bottom: 20px
+                right: 18px
+                width: 50px
+                height: 50px
+                border-radius: 62px
+                background-color: $blue
+    &_description
+        padding: 18px 284px 18px 18px
+        margin-bottom: 18px
+        background: #FFFFFF
+        border-radius: 9px
+        font-weight: 400
+        font-size: 16px
+        line-height: 150%
+        color: #181818
+
+        h3
+            font-weight: 700
+            font-size: 22px
+footer
+    background: #2B2B2B
+    .footer
+        display: block
+        &_about, &_links, &_mobile
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding: 0 135px
+            height: 108px
+            text-decoration: none
+            border-bottom: 1px solid #3D3D3D
+        &_logo
+            max-width: 100%
+            margin-top: 8px
+            &_img:hover
+                background-color: $blue
+        a
+            font-weight: 700
+            font-size: 18px
+            color: #FFFFFF
+            text-decoration: none
+            @include a_hover
+        &_btn
+            border: 1px solid #A6B0B9
+            border-radius: 34px
+            font-weight: 700
+            font-size: 16px
+            line-height: 100%
+            text-align: center
+            color: #FFFFFF
+            background: #2B2B2B
+            padding: 16px 25px
+            gap: 10px
+            @include btn_hover
+        &_links
+            height: 74px        
+            a
+                font-weight: 400
+                font-size: 14px
+                color: #FFFFFF
+                @include a_hover
+        &_mobile
+            height: 66px
+            a
+                font-weight: 400
+                font-size: 14px
+                color: #A6B0B9
+                @include a_hover
+            // span
+            //     width: 30px
+            //     height: 30px
+            //     background-color: #fff
+
+
+.modal
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 1050
+    display: none
+    width: 100%
+    height: 100%
+    overflow: hidden
+    background-color: rgba(0,0,0,.5)
+    &_dialog
+        max-width: 500px
+        margin: 40px auto
+    &_content
+        position: relative
+        width: 100%
+        padding: 40px
+        background-color: #fff
+        border: 1px solid rgba(0,0,0,.2)
+        border-radius: 4px
+        max-height: 80vh
+        overflow-y: auto
+    &_close
+        position: absolute
+        top: 8px
+        right: 14px
+        font-size: 30px
+        color: #000
+        opacity: .5
+        font-weight: 700
+        border: none
+        background-color: transparent
+        cursor: pointer
+    &_title
+        text-align: center
+        font-size: 22px
+        text-transform: uppercase
+    &_input
+        display: block
+        margin: 20px auto 20px auto
+        width: 280px
+        height: 50px
+        background: #fff
+        box-shadow: 0 4px 15px rgba(0,0,0,.2)
+        border: none
+        font-size: 18px
+        text-align: center
+        padding: 0 20px
+        outline: 0
+.show
+    display: block
+.hide
+    display: none        
+.btn
+    display: block
+    width: 280px
+    margin: 0 auto
+// .fade
+//     animation-name: fade
+//     animation-duration: 1.5s
+            // @keyframes 
+            //     fade from opacity: 0.1
+            //     to opacity: 1
+
+                
+
+
+
+
+
+
+            
+        
+    
+        
+        
+        
+        
+
+ 
+
+           
+   
+
+
+
+            
+
+
